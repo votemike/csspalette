@@ -20,6 +20,7 @@ Gradient information
 ## TODO
 
 Breaks if CSS file starts with //  
+Add built CSS and JS and Manifest to gitignore  
 Implement X11 numbers    
 Refactor colour extraction code (regex's)  
 Refactor Guzzle code in Homecontroller
