@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+Route::get('site', ['as' => 'site', 'uses' => 'HomeController@site']);
+Route::get('sitefile', 'HomeController@sitefile');
+Route::post('file', 'HomeController@file');

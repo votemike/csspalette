@@ -1,9 +1,60 @@
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$colour-size: 200px;
+$footer-height: 60px;
+
+html {
+  position: relative;
+  min-height: 100%;
+  body {
+    font-weight: 100;
+    font-family: 'Lato';
+    margin-bottom: $footer-height;
+
+    .container {
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 auto;
+
+      .content {
+        display: inline-block;
+        width: 100%; /*maybe not*/
+
+        .title {
+          font-size: 96px;
+        }
+        .forms-container {
+          width: 40%;
+          margin: 0 auto;
+        }
+        .colour-container {
+          height: $colour-size + 60px;
+          display: inline-block;
+          vertical-align: top;
+
+          .colour {
+            width: $colour-size;
+            height: $colour-size;
+          }
+        }
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $footer-height;
+      background-color: #f5f5f5;
+
+      p {
+        margin: 20px 0;
+      }
+    }
+  }
+}
