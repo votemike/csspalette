@@ -9,7 +9,7 @@ Upload a CSS file, paste the link to an online CSS file or paste the link to a s
 ## Notes
 
 Does not match inline styles
-Does not match styles within <style> tags
+Does not match styles within `<style>` tags
 
 ## Future Updates
 
